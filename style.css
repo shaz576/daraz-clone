@@ -235,7 +235,7 @@ body {
 .bgapp {
   width: 180px;
   height: 158px;
-  background-image: url("/images/bcapp.png");
+  background-image: url("images/bcapp.png");
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: 100% auto;
