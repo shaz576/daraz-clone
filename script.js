@@ -1,5 +1,17 @@
 // Run the code only after the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
+const top1 = document.querySelector('.top1');
+  const top2 = document.querySelector('.top2');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 1000) {
+      top1.style.top = '-2rem';       // hide top1
+      top2.style.top = '0';           // move top2 to top
+    } else {
+      top1.style.top = '0';           // show top1
+      top2.style.top = '2rem';        // move top2 back below top1
+    }
+  });
 
     // DOM ELEMENTS SELECTION 
     const slider = document.querySelector('.slides');  // Main slider container

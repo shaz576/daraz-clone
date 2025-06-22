@@ -11,14 +11,20 @@ body {
 
 body {
   background-color: #e7e5e5;
+  padding-top: 7rem; 
+   
 }
-
 .top1 {
   background-color: #F85606;
   width: 100vw;
   display: flex;
   justify-content: end;
   padding-right: 6vw;
+  position: fixed;
+  top: 0;
+  z-index: 1001; /* On top of top2 */
+  height: 2rem;
+  
 }
 
 .navbar {
@@ -37,8 +43,10 @@ body {
   justify-content: center;
   padding-top: 1rem;
   height: 5rem;
+  position: fixed;
+  top: 2rem; /* shift it below top1 */
+  z-index: 1000;
 }
-
 .top2 img {
   width: 8rem;
   margin-left: -230px;
